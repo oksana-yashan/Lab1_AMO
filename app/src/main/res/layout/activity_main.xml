@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/r1"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textViewResult2"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="9dp"
+                    android:hint="Result"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toTopOf="@+id/butCalc2"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextg1"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextc1"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextz2" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="26dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="76dp"
+                    android:text="3)"
+                    android:textColor="#0A0A0A"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/butCalc2" />
+
+                <Button
+                    android:id="@+id/butFile2"
+                    android:layout_width="85dp"
+                    android:layout_height="46dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="52dp"
+                    android:onClick="butFile2"
+                    android:text="file"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/butCalc2"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextz2" />
+
+                <EditText
+                    android:id="@+id/editTextz2"
+                    android:layout_width="62dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="8dp"
+                    android:ems="10"
+                    android:hint="z"
+                    android:inputType="text|numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextx2"
+                    app:layout_constraintStart_toEndOf="@+id/editTextx2"
+                    app:layout_constraintTop_toTopOf="@+id/editTextx2"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/butCalc1"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="42dp"
+                    android:onClick="butCalc1"
+                    android:text="@string/calc"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewResult1"
+                    app:layout_constraintStart_toStartOf="@+id/butFile1"
+                    app:layout_constraintTop_toTopOf="@+id/butFile1" />
+
+                <EditText
+                    android:id="@+id/editTextx2"
+                    android:layout_width="59dp"
+                    android:layout_height="43dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="x"
+                    android:inputType="text|numberDecimal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <EditText
+                    android:id="@+id/editTextg1"
+                    android:layout_width="62dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:ems="10"
+                    android:hint="g"
+                    android:inputType="text|numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextc1"
+                    app:layout_constraintStart_toEndOf="@+id/editTextc1"
+                    app:layout_constraintTop_toTopOf="@+id/editTextc1"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/butFile1"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="44dp"
+                    android:onClick="butFile1"
+                    android:text="file"
+                    app:layout_constraintBottom_toBottomOf="@+id/editTextg1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.846"
+                    app:layout_constraintStart_toEndOf="@+id/editTextg1"
+                    app:layout_constraintTop_toTopOf="@+id/editTextg1" />
+
+                <Button
+                    android:id="@+id/butCalc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:onClick="butCalc2"
+                    android:text="calc"
+                    app:layout_constraintBottom_toBottomOf="@+id/butFile2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/butFile2"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/Lab1im1"
+                    android:layout_width="146dp"
+                    android:layout_height="69dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/picture1" />
+
+                <EditText
+                    android:id="@+id/editTextc1"
+                    android:layout_width="61dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="28dp"
+                    android:ems="10"
+                    android:hint="c"
+                    android:inputType="text|numberDecimal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="19dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:text="1)"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewResult1"
+                    android:layout_width="153dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="Result"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextg1"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextc1"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextg1" />
+
+                <TextView
+                    android:id="@+id/textViewRes3"
+                    android:layout_width="270dp"
+                    android:layout_height="260dp"
+                    android:layout_marginTop="24dp"
+                    android:hint="Result"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView5"
+                    app:layout_constraintStart_toStartOf="@+id/imageView5"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="166dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewResult2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView3"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/picture2" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="129dp"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="136dp"
+                    android:text="2) Введіть х та z : "
+                    android:textColor="#0A0A0A"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextz2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editTextx2"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextc1" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="305dp"
+                    android:layout_height="162dp"
+                    app:layout_constraintStart_toEndOf="@+id/textView4"
+                    app:layout_constraintTop_toTopOf="@+id/textView4"
+                    app:srcCompat="@drawable/picture3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
